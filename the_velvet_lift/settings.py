@@ -37,6 +37,7 @@ ALLOWED_HOSTS = (
         ".codeinstitute-ide.net",
         ".herokuapp.com",
         "localhost",
+        "velvet-lift-c91dc89ea594.herokuapp.com",
     ],
 )
 
