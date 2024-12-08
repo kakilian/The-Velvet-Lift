@@ -10,7 +10,11 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
+import os
 from pathlib import Path
+
+if os.path.exists("env.py"):
+    import env
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -20,12 +24,21 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = ['SECRET_KEY'] = ()
+SECRET_KEY = os.environ.get("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ["8000-kakilian-thevelvetlift-x7jyvlk7svi.ws.codeinstitute-ide.net"]
+ALLOWED_HOSTS = (
+    [
+        "8000-kakilian-thevelvetlift-x7jyvlk7svi.ws.codeinstitute-ide.net",
+        "8000-kakilian-thevelvetlift-szye5nke1ij.ws.codeinstitute-ide.net",
+        "127.0.0.1",
+        ".codeinstitute-ide.net",
+        ".herokuapp.com",
+        "localhost",
+    ],
+)
 
 
 # Application definition
@@ -58,7 +71,7 @@ ROOT_URLCONF = "the_velvet_lift.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [],
+        "DIRS": [os.path.join(BASE_DIR, "templates")],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
