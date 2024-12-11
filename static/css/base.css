@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=GFS+Didot&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+:root {
+    /** Fonts */
+    --title: 'Didot', serif;
+    --main-font: 'Source Sans 3', serif;
+
+    /** Colors */
+    --background: #5492f6;
+    --black: #000;
+    --dark-blue: #133f87;
+    --writing: #ffffff;
+    --button: #ffc107;
+
+    /** Borders Box Shades */
+    --smal-box-shadow: 2px -1px 5px 0 #495057;
+    --border: 2px solid #ee7630b6;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--main-font);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--title);
+}
+
+main {
+    flex: 1 0 auto;
+    background-color: var(--writing);
+}
+
+footer {
+    flex-shrink: 0;
+    background: var(--background);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-top: var(--border);
+}
+
+.social-icon {
+    height: 2rem;
+    margin: 1rem;
+}
+
+/* Header */
+.navbar {
+    background-color: var(--background);
+    box-shadow: var(--smal-box-shadow);
+}
+
+a.nav-link {
+    color: var(--button);
+}
+
+/* Company Logo */
+img.logo {
+    width: 14rem;
+    border: var(--smal-box-shadow);
+}
