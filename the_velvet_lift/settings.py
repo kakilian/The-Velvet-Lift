@@ -13,12 +13,11 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 import os
 from pathlib import Path
 
-if os.path.exists("env.py"):
-    import env
-
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+if os.path.exists("env.py"):
+    import env
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
@@ -27,20 +26,17 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = "DEVELOPMENT" in os.environ
 
-ALLOWED_HOSTS = (
-    [
-        "8000-kakilian-thevelvetlift-x7jyvlk7svi.ws.codeinstitute-ide.net",
-        "8000-kakilian-thevelvetlift-szye5nke1ij.ws.codeinstitute-ide.net",
-        "8000-kakilian-thevelvetlift-szye5nke1ij.ws.codeinstitute-ide.net",
-        "127.0.0.1",
-        ".codeinstitute-ide.net",
-        ".herokuapp.com",
-        "localhost",
-        "velvet-lift-c91dc89ea594.herokuapp.com",
-    ],
-)
+ALLOWED_HOSTS = [
+    "8000-kakilian-thevelvetlift-x7jyvlk7svi.ws.codeinstitute-ide.net",
+    "8000-kakilian-thevelvetlift-szye5nke1ij.ws.codeinstitute-ide.net",
+    "127.0.0.1",
+    ".codeinstitute-ide.net",
+    ".herokuapp.com",
+    "localhost",
+    "velvet-lift-c91dc89ea594.herokuapp.com",
+]
 
 
 # Application definition
@@ -70,6 +66,7 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = "the_velvet_lift.urls"
 
+
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
@@ -85,6 +82,7 @@ TEMPLATES = [
         },
     },
 ]
+
 
 WSGI_APPLICATION = "the_velvet_lift.wsgi.application"
 

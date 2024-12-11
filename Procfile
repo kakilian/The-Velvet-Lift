@@ -1,1 +1,1 @@
-web: gunicorn the_velvet_lift.wsgi 
+web gunicorn the_velvet_lift.wsgi
