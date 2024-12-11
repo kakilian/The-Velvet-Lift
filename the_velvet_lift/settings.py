@@ -33,6 +33,7 @@ ALLOWED_HOSTS = (
     [
         "8000-kakilian-thevelvetlift-x7jyvlk7svi.ws.codeinstitute-ide.net",
         "8000-kakilian-thevelvetlift-szye5nke1ij.ws.codeinstitute-ide.net",
+        "8000-kakilian-thevelvetlift-szye5nke1ij.ws.codeinstitute-ide.net",
         "127.0.0.1",
         ".codeinstitute-ide.net",
         ".herokuapp.com",
@@ -139,3 +140,24 @@ STATIC_URL = "static/"
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+# Searching Deployment server error 500
+
+LOGGING = {
+    "version": 1,
+    "disable_existing_loggers": False,
+    "handlers": {
+        "file": {
+            "level": "DEBUG",
+            "class": "logging.FileHandler",
+            "filename": "/tmp/django_errors.log",
+        },
+    },
+    "loggers": {
+        "django": {
+            "handlers": ["file"],
+            "level": "DEBUG",
+            "propagate": True,
+        },
+    },
+}
