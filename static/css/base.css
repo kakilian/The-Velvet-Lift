@@ -46,7 +46,7 @@ footer {
     flex-shrink: 0;
     background: var(--background);
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     border-top: var(--border);
@@ -61,6 +61,7 @@ footer {
 .social-icon {
     height: 2rem;
     margin: 1rem;
+    margin-bottom: 1rem;
 }
 
 /* Header */
