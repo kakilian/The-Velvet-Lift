@@ -52,6 +52,12 @@ footer {
     border-top: var(--border);
 }
 
+.copyright {
+    padding: 10px 0;
+    font-size: 14px;
+    color: var(--writing);
+}
+
 .social-icon {
     height: 2rem;
     margin: 1rem;
