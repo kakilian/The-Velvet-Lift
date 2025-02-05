@@ -1,6 +1,6 @@
 from django.contrib.auth.models import User
 from django.db import models
-from main_features import BaseModel
+from main_features.models import BaseModel
 
 
 # Create your models here.
