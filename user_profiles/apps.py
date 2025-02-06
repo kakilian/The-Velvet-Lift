@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class TechnicalSubsystemsConfig(AppConfig):
+class UserProfilesConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'technical_subsystems'
+    name = 'user_profiles'

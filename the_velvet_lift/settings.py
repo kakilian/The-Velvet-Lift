@@ -49,7 +49,8 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     # Applications
-    "auxiliary_features",
+    "appointments",
+    "user_profiles",
     "main_features",
     "technical_subsystems",
     "template_app",

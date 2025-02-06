@@ -21,8 +21,8 @@ from template_app import views as template_views
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("profile/", include("technical_subsystems.urls")),
-    path("appointments/", include("auxiliary_features.urls")),
+    path("user_profiles/", include("user_profiles.urls")),
+    path("appointments/", include("appointments.urls")),
     path("main_features/", include("main_features.urls")),
     path("", template_views.home, name="home"),
 ]
