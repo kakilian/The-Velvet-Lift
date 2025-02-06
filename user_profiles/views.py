@@ -1,6 +1,6 @@
 from django.shortcuts import render
 
 
-# Create your views here.
-def user_profiles_view(request):
-    return render(request, "profile.html")
+def view_name(request):
+    # Your view logic here
+    return render(request, "template_profile.html")

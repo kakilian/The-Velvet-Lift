@@ -52,7 +52,6 @@ INSTALLED_APPS = [
     "appointments",
     "user_profiles",
     "main_features",
-    "technical_subsystems",
     "template_app",
 ]
 
