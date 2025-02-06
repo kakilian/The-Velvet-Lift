@@ -26,7 +26,7 @@ if os.path.exists("env.py"):
 SECRET_KEY = os.environ.get("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = "DEVELOPMENT" in os.environ
+DEBUG = True
 
 ALLOWED_HOSTS = [
     "8000-kakilian-thevelvetlift-x7jyvlk7svi.ws.codeinstitute-ide.net",
@@ -52,7 +52,7 @@ INSTALLED_APPS = [
     "auxiliary_features",
     "main_features",
     "technical_subsystems",
-    "static",
+    "template_app",
 ]
 
 MIDDLEWARE = [
@@ -71,7 +71,7 @@ ROOT_URLCONF = "the_velvet_lift.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [os.path.join(BASE_DIR, "templates")],
+        "DIRS": [os.path.join(BASE_DIR, "template_app")],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
@@ -133,9 +133,8 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-STATIC_URL = "static/"
-
-STATICFILES_DIRS = (os.path.join(BASE_DIR, "static"),)
+STATIC_URL = "/assets/"
+STATICFILES_DIRS = (os.path.join(BASE_DIR, "assets"),)
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field

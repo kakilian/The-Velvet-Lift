@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"
         integrity="sha512-b2QcS5SsA8tZodcDtGRELiGv5SaKSk1vDHDaQRda0htPYWZ6046lr3kJ5bAAQdpV2mmA/4v0wQF9MyU6/pDIAg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="{% static '/css/base.css' %}">
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
     {% endblock %}
 
     {% block onload_js %}
@@ -20,11 +20,11 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     {% endblock %}
     <!--Blocktitle inplace to allow title changes to each page-->
-    <title>the Velvet Lift {% block title %}{% endblock %}</title>
+    <title>{% block title %}the Velvet Lift {% endblock %}</title>
 </head>
 
 <body>
-    {% include 'add/header.html' %}
+    {% include 'template_app/header.html' %}
 
     <h1>
         the Velvet Lift
@@ -33,7 +33,7 @@
         {% block content %}
         {% endblock %}
     </main>
-    {% include 'add/footer.html' %}
+    {% include 'template_app/footer.html' %}
 
 
 
