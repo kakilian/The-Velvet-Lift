@@ -32,7 +32,7 @@ ALLOWED_HOSTS = [
     "8000-kakilian-thevelvetlift-x7jyvlk7svi.ws.codeinstitute-ide.net",
     "8000-kakilian-thevelvetlift-szye5nke1ij.ws.codeinstitute-ide.net",
     "127.0.0.1",
-    ".codeinstitute-ide.net",
+    "*.codeinstitute-ide.net",
     ".herokuapp.com",
     "localhost",
     "velvet-lift-c91dc89ea594.herokuapp.com",
@@ -133,8 +133,9 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-STATIC_URL = "/assets/"
+STATIC_URL = "assets/"
 STATICFILES_DIRS = (os.path.join(BASE_DIR, "assets"),)
+STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
