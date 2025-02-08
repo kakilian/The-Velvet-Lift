@@ -6,7 +6,7 @@
 
 This project consists of the following Django apps:
 
-- **assests**: Contains static files (CSS, JS, images, icons).
+- **assets**: Contains static files (CSS, JS, images, icons).
 - **appointments**: (Previously named 'auxiliary_features') Manages appointment bookings and payment tracking.
 - **main_features**: Provides additional core functionality and views (such as a homepage or other shared features).
 - **technical_subsystems**: Contains technical functionality (e.g. parts of user profiles if needed).
@@ -24,7 +24,7 @@ This project consists of the following Django apps:
 - **Payment**: Tracks payment details for appointments.
 
 ### transformations/models.py
-- **Tranformation**: Stores befreo-and-after images and procedure details for cosmetic procedures.
+- **Tranformation**: Stores before-and-after images and procedure details for cosmetic procedures.
 
 ## Setup instructions
 
@@ -64,7 +64,7 @@ This project consists of the following Django apps:
    ```
 3. Navigate to the project directory and install dependencies:
    ```bash
-   cd animated-waffle
+   cd thevelvetlift
    pip3 install -r requirements.txt
    ```
 
@@ -75,6 +75,22 @@ This project consists of the following Django apps:
 3. Add Python and Node.js buildpacks.
 4. Set the `PORT` config var to `8000`.
 5. Deploy the branch and launch the application.
+
+## Project Structure
+
+```bash
+The-Velvet-Lift/
+├── manage.py
+├── requirements.txt
+├── The-Velvet-Lift/             # Project configuration (settings, urls, wsgi, asgi)
+├── assets/                     # Static files (CSS, JS, images)
+├── appointments/               # Appointment and Payment functionality
+├── main_features/              # Core features and additional views
+├── technical_subsystems/       # Additional technical functionality
+├── template_app/               # Global templates (base.html, header.html, footer.html, home.html)
+└── user_profiles/              # User profile management (UserProfile, Doctor models)
+
+```
 
 ---
 
@@ -115,8 +131,8 @@ STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 ```
 
 - ### Templates:
-Global templates are stored in ```bash template_app/templates/template_app/ ```. Use these for your base layout and shared UI components.
-App Renaming:
+- Global templates are stored in ```bash template_app/templates/template_app/ ```. 
+- App Renaming:
 Note that the auxiliary_features app was renamed to appointments for clarity.
 
 
