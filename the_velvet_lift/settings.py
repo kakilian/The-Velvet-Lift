@@ -26,13 +26,13 @@ if os.path.exists("env.py"):
 SECRET_KEY = os.environ.get("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = [
     "8000-kakilian-thevelvetlift-x7jyvlk7svi.ws.codeinstitute-ide.net",
     "8000-kakilian-thevelvetlift-szye5nke1ij.ws.codeinstitute-ide.net",
     "127.0.0.1",
-    ".codeinstitute-ide.net",
+    "*.codeinstitute-ide.net",
     ".herokuapp.com",
     "localhost",
     "velvet-lift-c91dc89ea594.herokuapp.com",
