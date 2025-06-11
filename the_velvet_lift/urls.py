@@ -20,6 +20,7 @@ from django.urls import path, include
 from template_app import views as template_views
 from django.views.generic import TemplateView
 
+
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("profiles/", include("user_profiles.urls")),

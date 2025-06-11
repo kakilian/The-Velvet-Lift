@@ -1,5 +1,6 @@
 from django.shortcuts import render
 
+
 def book_appointment(request):
     """
     View to handle booking an appointment.
