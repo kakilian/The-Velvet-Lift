@@ -6,7 +6,8 @@
     --main-font: 'Source Sans 3', serif;
 
     /** Colors */
-    --background: #5492f6;
+    --primary: #6a3fbf;;
+    --background: #6a3fbf;
     --black: #000;
     --dark-blue: #133f87;
     --writing: #ffffff;
@@ -50,6 +51,11 @@ footer {
     justify-content: center;
     align-items: center;
     border-top: var(--border);
+    color: var(--writing);
+}
+
+footer a {
+    color: var(--writing); 
 }
 
 .copyright {
@@ -70,12 +76,34 @@ footer {
     box-shadow: var(--smal-box-shadow);
 }
 
+.navbar-brand {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
 a.nav-link {
-    color: var(--button);
+    color: var(--primary-purple);
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a.nav-link:hover,
+a.nav-link:focus {
+    color: #452d83;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+a.nav-link.active {
+    font-weight: 700;
+    color: #452d83;
 }
 
 /* Company Logo */
-img.logo {
-    width: 14rem;
-    border: var(--smal-box-shadow);
+.logo {
+    height: 48px;
+    width: auto;
+    object-fit: contain;
+    padding: 0;
 }

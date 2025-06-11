@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: velvet-lift
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn the_velvet_lift.wsgi
+    envVars:
+      - key: DEBUG
+        value: False
+      - key: SECRET_KEY
+        sync: false

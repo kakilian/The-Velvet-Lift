@@ -1,5 +1,4 @@
 {% load static %}
-{% load tz %}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -25,18 +24,13 @@
 
 <body>
     {% include 'template_app/header.html' %}
-
-    <h1>
-        the Velvet Lift
-    </h1>
+    
     <main>
         {% block content %}
         {% endblock %}
     </main>
+
     {% include 'template_app/footer.html' %}
-
-
-
 </body>
 
 
