@@ -1,10 +1,26 @@
-core.Microsoft*
-core.mongo*
-core.python*
-env.py
+# Python
 __pycache__/
 *.py[cod]
+*.sqlite3
+.env
+env.py
+.venv/
+db.sqlite3
+
+# Node (if accidentally added)
 node_modules/
+
+# OS / IDE noise
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+django_errors.log
+
+# Static files (collected)
+staticfiles/
+
+# GitHub system folders
 .github/
 cloudinary_python.txt
-.venv
