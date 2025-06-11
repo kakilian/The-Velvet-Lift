@@ -39,12 +39,13 @@ ALLOWED_HOSTS = [
     "8000-kakilian-thevelvetlift-szye5nke1ij.ws.codeinstitute-ide.net",
     "127.0.0.1",
     "*.codeinstitute-ide.net",
-    ".herokuapp.com",
     "localhost",
 ]
 
 if RENDER_EXTERNAL_HOSTNAME:
     ALLOWED_HOSTS.append(RENDER_EXTERNAL_HOSTNAME)
+
+ALLOWED_HOSTS.append('the-velvet-lift.onrender.com')    
 
 # Application definition
 
