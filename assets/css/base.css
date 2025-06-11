@@ -51,13 +51,6 @@ main {
     background-color: var(--writing);
 }
 
-.hero-section {
-    position: relative;
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 80%, #6a3fbf 100%), url('/assets/images/procedures/landing-page.png');
-    background-size: cover;
-    background-position: center;
-}
-
 footer {
     flex-shrink: 0;
     background: var(--background);

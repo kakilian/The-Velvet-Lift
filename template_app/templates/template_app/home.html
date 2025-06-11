@@ -3,24 +3,26 @@
 
 {% block content %}
 <style>
-    .hero-section {
-        background: url("{% static 'images/procedures/landing-page.png' %}") no-repeat center center;
-        background-size: cover;
-        min-height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        padding: 5%;
-    }
+.hero-section {
+    background: url("{% static 'images/procedures/landing-page.png' %}") no-repeat center center;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start !important;
+    padding-left: 8%;
+    padding-right: 5%;
+}
 
     .hero-text {
-        background-color: rgba(255, 255, 255, 0.8);
-        padding: 2.5rem;
-        border-radius: 12px;
-        max-width: 600px;
-        text-align: left;
-        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-    }
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 2.5rem;
+    border-radius: 12px;
+    max-width: 600px;
+    text-align: left;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    margin-left: 0;
+}
 
     .hero-text h1 {
         color: #6a3fbf;
@@ -34,9 +36,10 @@
     }
 </style>
 
-<div class="hero-section">
-    <div class="hero-text">
-        <h1 class="display-5">Rediscover Your Radiance</h1>
+
+<div class="hero-section text-center py-5 bg-light">
+    <div class="hero-text container">
+        <h1 class="display-5 fw-bold">Rediscover Your Radiance</h1>
         <p class="lead mt-3">
             At <strong>The Velvet Lift</strong>, beauty is timeless — and so is confidence.
             Specializing in non-invasive cosmetic lifting treatments tailored to rejuvenate, refine, and restore.
