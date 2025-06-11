@@ -18,6 +18,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from template_app import views as template_views
+from django.views.generic import TemplateView
 
 urlpatterns = [
     path("admin/", admin.site.urls),
@@ -25,4 +26,5 @@ urlpatterns = [
     path("appointments/", include("appointments.urls")),
     path("main_features/", include("main_features.urls")),
     path("", template_views.home, name="home"),
+    path("about/", TemplateView.as_view(template_name="about.html"), name="about"),
 ]

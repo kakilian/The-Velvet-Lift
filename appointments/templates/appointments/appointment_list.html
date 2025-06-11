@@ -1,12 +1,12 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<h2>My Appointments</h2>
+<h2>🗓️ Appointments</h2>
 <ul>
-    {% for appointment in appointments %}
-    <li>{{ appointment.appointment_date }} - {{ appointment.status }}</li>
-    {% empty %}
+  {% for appointment in appointments %}
+    <li>{{ appointment.appointment_date }} - <strong>{{ appointment.status }}</strong></li>
+  {% empty %}
     <li>No upcoming appointments.</li>
-    {% endfor %}
+  {% endfor %}
 </ul>
 {% endblock %}
