@@ -18,6 +18,14 @@
     --border: 2px solid #ee7630b6;
 }
 
+/* Company Logo */
+.logo {
+    height: 120px;
+    width: auto;
+    object-fit: contain;
+    padding: 0 12px;
+}
+
 html,
 body {
     height: 100%;
@@ -73,12 +81,12 @@ footer a {
 /* Header */
 .navbar {
     background-color: var(--background);
-    box-shadow: var(--smal-box-shadow);
+    box-shadow: 1 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .navbar-brand {
-    padding-top: 0;
-    padding-bottom: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 a.nav-link {
@@ -100,10 +108,3 @@ a.nav-link.active {
     color: #452d83;
 }
 
-/* Company Logo */
-.logo {
-    height: 48px;
-    width: auto;
-    object-fit: contain;
-    padding: 0;
-}
