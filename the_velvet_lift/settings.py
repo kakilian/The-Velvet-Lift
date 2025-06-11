@@ -32,6 +32,8 @@ DEBUG = os.environ.get("DEBUG", "True") == "True"
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+RENDER_EXTERNAL_HOSTNAME = os.environ.get("RENDER_EXTERNAL_HOSTNAME")
+
 ALLOWED_HOSTS = [
     "8000-kakilian-thevelvetlift-x7jyvlk7svi.ws.codeinstitute-ide.net",
     "8000-kakilian-thevelvetlift-szye5nke1ij.ws.codeinstitute-ide.net",
@@ -39,10 +41,10 @@ ALLOWED_HOSTS = [
     "*.codeinstitute-ide.net",
     ".herokuapp.com",
     "localhost",
-    "velvet-lift-c91dc89ea594.herokuapp.com",
-
 ]
 
+if RENDER_EXTERNAL_HOSTNAME:
+    ALLOWED_HOSTS.append(RENDER_EXTERNAL_HOSTNAME)
 
 # Application definition
 
