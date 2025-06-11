@@ -1,8 +1,13 @@
 from django.shortcuts import render
-from django.http import HttpResponse
-
-# Create your views here.
+from .models import Appointment
 
 
 def appointment_list(request):
-    return HttpResponse("This is the appointment list page")
+    if request.user.is_authenticated:
+        appointments = Appointment.objects.filter(user=request.user).order_by('appointment_date')
+    else:
+        appointments = []
+
+    return render(request, "appointment_list.html", {
+        "appointments": appointments
+    })
