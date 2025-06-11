@@ -1,0 +1,43 @@
+{% extends 'template_app/base.html' %}
+{% load static %}
+
+
+{% block content %}
+<section class="container py-5">
+    <div class="text-center mb-4">
+        <h1 class="display-5 fw-bold">About The Velvet Lift</h1>
+        <p class="lead text-muted">Elevate your confidence. Reveal your natural beauty.</p>
+    </div>
+
+    <div class="row align-items-center">
+        <div class="col-md-6">
+            <p>
+                At <strong>The Velvet Lift</strong>, we specialize in non-invasive facial enhancements designed to restore, refresh,
+                and rejuvenate. Our clinic blends advanced aesthetics with compassionate care — creating a luxurious, 
+                supportive environment where every client feels seen, heard, and beautifully transformed.
+            </p>
+            <p>
+                Whether you're seeking subtle lifting, deep hydration, or a radiant skin boost, our expert team is
+                dedicated to curating treatments that align with your natural features and personal goals. 
+            </p>
+            <p>
+                We believe beauty should feel effortless — like silk gliding over skin, like velvet.
+            </p>
+        </div>
+        
+        <div class="col-md-6 text-center">
+            <img src="{% static 'images/procedures/plastic-surgery-procedure.png' %}" class="img-fluid rounded shadow" alt="Treatment at The Velvet Lift">
+        </div>
+    </div>
+
+    <div class="mt-5 text-center">
+    <h5 class="fw-semibold text-muted" style="font-size: 1.1rem;">
+        Built with ❤️ by Katarina Kilian
+    </h5>
+    <p class="text-muted" style="font-size: 0.9rem; max-width: 700px; margin: 0 auto;">
+        This project was developed as part of the Code Institute's PP4 Bootcamp — bringing together front-end polish, back-end logic, and real-world beauty business insight.
+    </p>
+</div>
+</section>
+{% endblock %}
+

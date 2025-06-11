@@ -27,5 +27,5 @@ urlpatterns = [
     path("appointments/", include("appointments.urls")),
     path("main_features/", include("main_features.urls")),
     path("", template_views.home, name="home"),
-    path("about/", TemplateView.as_view(template_name="about.html"), name="about"),
+    path("about/", TemplateView.as_view(template_name="template_app/about.html"), name="about"),
 ]

@@ -84,7 +84,7 @@ ROOT_URLCONF = "the_velvet_lift.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [os.path.join(BASE_DIR, "template_app,")],
+        "DIRS": [os.path.join(BASE_DIR, "template_app", "templates")],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
