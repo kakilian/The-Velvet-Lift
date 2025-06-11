@@ -6,6 +6,7 @@ __pycache__/
 env.py
 .venv/
 db.sqlite3
+/db.sqlite3
 
 # Node (if accidentally added)
 node_modules/

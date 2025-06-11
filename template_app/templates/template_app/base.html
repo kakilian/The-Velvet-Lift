@@ -6,6 +6,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Katarina Kilian"> 
+    <!-- Meta Description -->
+    <meta name="description" content="The Velvet Lift – A cosmetic clinic web app that showcases non-invasive facial transformation services, appointment booking, client stories, and stunning before-and-after results. Created by Katarina Kilian for PP4.">
+
+    <!-- SEO Keywords -->
+    <meta name="keywords" content="cosmetic clinic, beauty, face lift, before and after, appointment booking, The Velvet Lift, Katarina Kilian, PP4 project">
+
+    <!-- Theme Color for mobile/tab -->
+    <meta name="theme-color" content="#5492f6">
+
+    <!-- Open Graph for link previews (trying*) -->
+    <meta property="og:title" content="The Velvet Lift – Cosmetic Transformation Clinic">
+    <meta property="og:description" content="Explore non-invasive lifting treatments and transformations. Built for PP4 by Katarina Kilian.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://the-velvet-lift.onrender.com/">
+    <meta property="og:image" content="{% static 'images/logo.png' %}">
+
     {% block extra_css %}
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"
         integrity="sha512-b2QcS5SsA8tZodcDtGRELiGv5SaKSk1vDHDaQRda0htPYWZ6046lr3kJ5bAAQdpV2mmA/4v0wQF9MyU6/pDIAg=="
@@ -14,7 +31,6 @@
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon">
-
     {% endblock %}
 
     {% block onload_js %}
